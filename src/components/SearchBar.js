@@ -1,3 +1,4 @@
+import './SearchBar.css'
 import { useState } from 'react';
 
 function SearchBar({ onSubmit }) {
@@ -16,8 +17,9 @@ function SearchBar({ onSubmit }) {
   };
 
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
+        <label>Enter Search Term</label>
         <input
           type="text"
           placeholder='What are you searching for?'
