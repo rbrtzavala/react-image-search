@@ -1,10 +1,14 @@
 import ImageShow from "./ImageShow.js";
 
-function ImageList() {
+function ImageList({ images }) {
+  const renderedImages = images.map((image) => {
+    return <ImageShow image={image} key={image.id} />
+  })
+
   return (
     <div>
       <h2>ImageList</h2>
-      <ImageShow />
+      {renderedImages}
     </div>
   )
 }
