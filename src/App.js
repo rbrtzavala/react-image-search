@@ -1,4 +1,4 @@
-import searchImages from "./api.js";
+
 import ImageList from "./components/ImageList.js";
 import SearchBar from "./components/SearchBar.js";
 
